@@ -1868,5 +1868,8 @@ menu "Text editors and viewers"
 	source "package/uemacs/Config.in"
 	source "package/vim/Config.in"
 endmenu
+menu "Private package"
+	source "package/helloworld/Config.in"
+endmenu
 
 endmenu
