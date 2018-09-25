@@ -24,3 +24,7 @@ You can also find us on #buildroot on Freenode IRC.
 
 If you would like to contribute patches, please read
 https://buildroot.org/manual.html#submitting-patches
+
+1. make qemu_arm_vexpress_defconfig
+2. make
+3. qemu-system-arm -M vexpress-a9 -smp 4 -m 1024M -kernel output/images/zImage -append "root=/dev/mmcblk0 console=ttyAMA0 loglevel=8" -dtb output/images/vexpress-v2p-ca9.dtb -sd output/images/rootfs.ext2 -nographic
